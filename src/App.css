@@ -1,0 +1,83 @@
+.app {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 6% 94%;
+  grid-template-areas:
+    "mainHeader"
+    "mainBox";
+}
+.mainHeader {
+  grid-area: mainHeader;
+  background-color: #292826;
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  height: 40px;
+  padding-left: 60%;
+}
+.mainBox{
+  grid-area: mainBox;
+}
+.links {
+  text-decoration: none;
+  padding: 10px;
+  color: white;
+  border-right: 1px solid white;
+  font-size: 15px;
+}
+.links:hover {
+  /* text-decoration: underline white; */
+  font-size: 15.5px;
+  transition: 200ms;
+  color: #292826;
+  background-color: antiquewhite;
+}
+
+/* Indiamart */
+
+.imd {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 10% 90%;
+  grid-template-areas:
+    "header header"
+    "sidebar main";
+}
+.header {
+  grid-area: header;
+  height: 100%;
+  background-color: rgb(30, 44, 90);
+  color: white;
+}
+.sidebar {
+  grid-area: sidebar;
+  height: 100%;
+  background-color: rgb(162, 214, 169);
+}
+.main {
+  grid-area: main;
+  height: 100%;
+  background-color: rgb(25, 158, 85);
+  overflow: scroll;
+  padding: 10px;
+}
+
+.sidebarComp {
+  display: flex;
+  flex-direction: column;
+}
+.listTitle {
+  font-weight: 600;
+}
+.column {
+  display: grid;
+  grid-template-columns: 5fr 10fr 20fr 15fr 30fr 20fr;
+  grid-template-rows: 100%;
+}
+.column p {
+  border: 0.1px solid rgb(184, 184, 226);
+  padding: 0px;
+  margin: 0px;
+}

@@ -1,0 +1,42 @@
+export const jobDatabase = [
+  {
+    job_id: 1,
+    company_Name: "ABC",
+    location: "Ghaziabad",
+    technology: ["react", "javaScript", "Typescript"],
+    package_told: 1200000,
+    package_giving: 1500000,
+  },
+  {
+    job_id: 1,
+    company_Name: "ABC",
+    location: "Ghaziabad",
+    technology: ["react", "javaScript", "Typescript"],
+    package_told: 1200000,
+    package_giving: 1500000,
+  },
+  {
+    job_id: 1,
+    company_Name: "ABC",
+    location: "Ghaziabad",
+    technology: ["react", "javaScript", "Typescript"],
+    package_told: 1200000,
+    package_giving: 1500000,
+  },
+  {
+    job_id: 1,
+    company_Name: "ABC",
+    location: "Ghaziabad",
+    technology: ["react", "javaScript", "Typescript"],
+    package_told: 1200000,
+    package_giving: 1500000,
+  },
+  {
+    job_id: 1,
+    company_Name: "ABC",
+    location: "Ghaziabad",
+    technology: ["react", "javaScript", "Typescript"],
+    package_told: 1200000,
+    package_giving: 1500000,
+  },
+];

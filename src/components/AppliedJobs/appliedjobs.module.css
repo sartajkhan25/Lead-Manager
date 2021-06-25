@@ -1,0 +1,25 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-rows: 100%;
+  grid-template-areas: "snippitSidebar contentBox";
+
+}
+.snippitSidebar {
+  grid-area: snippitSidebar;
+  padding: 20px;
+  margin: 10px 0px;
+  background-color: rgb(170, 233, 248);
+}
+.contentBox {
+  grid-area: contentBox;
+  height: 100;
+  padding: 20px;
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* background-color: beige; */
+  overflow: scroll;
+}

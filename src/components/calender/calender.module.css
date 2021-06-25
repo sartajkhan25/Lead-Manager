@@ -1,0 +1,14 @@
+.container{
+    padding:20px;
+    background-color: azure;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: right;
+}
+.rowCont{
+    text-decoration: none;
+}
