@@ -6,7 +6,7 @@ import News from "./components/testing/News";
 import IndiaMart from "./components/indiamart/IndiaMart";
 import Calender from "./components/calender/Calender";
 import AppliedJobs from "./components/AppliedJobs/AppliedJobs";
-
+// App
 function App() {
   return (
     <Provider store={store}>
