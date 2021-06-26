@@ -12,9 +12,8 @@
   background-color: #292826;
   display: flex;
   flex-direction: row;
-  justify-content: right;
+  justify-content: center;
   height: 40px;
-  padding-left: 60%;
 }
 .mainBox{
   grid-area: mainBox;
@@ -23,7 +22,6 @@
   text-decoration: none;
   padding: 10px;
   color: white;
-  border-right: 1px solid white;
   font-size: 15px;
 }
 .links:hover {
@@ -38,7 +36,7 @@
 
 .imd {
   display: grid;
-  height: 100vh;
+  height: 90vh;
   grid-template-columns: 1fr 6fr;
   grid-template-rows: 10% 90%;
   grid-template-areas:
