@@ -1,10 +1,5 @@
 import React from "react";
-import CompA from "../testing/CompA";
-import CompB from "../testing/CompB";
-import CompC from "../testing/CompC";
-import CompAUsingHOC from "../testing/CompAUsingHOC";
-import CompBUsingHOC from "../testing/CompBUsingHOC";
-import CompCUsingHOC from "../testing/CompCUsingHOC";
+
 function SideBar() {
   return (
     <div className="sidebarComp">
@@ -16,16 +11,7 @@ function SideBar() {
       <button> Select by State</button>
       <button> Companies</button>
       <button> Users</button>
-      {/* <React.Fragment>
-        <CompA />
-        <CompB />
-        <CompC />
-      </React.Fragment>
-      <React.Fragment>
-        <CompAUsingHOC />
-        <CompBUsingHOC />
-        <CompCUsingHOC />
-      </React.Fragment> */}
+
      
     </div>
 

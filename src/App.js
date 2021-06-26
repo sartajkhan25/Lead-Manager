@@ -2,7 +2,6 @@ import "./App.css";
 import { Provider } from "react-redux";
 import store from "./store";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
-import News from "./components/testing/News";
 import IndiaMart from "./components/indiamart/IndiaMart";
 
 function App() {
@@ -22,7 +21,6 @@ function App() {
           <Switch>
             
             <div className='mainBox'>
-              <Route exact path="/" component={News}></Route>
               <Route exact path="/im" component={IndiaMart}></Route>
             </div>
           </Switch>
