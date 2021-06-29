@@ -1,20 +1,37 @@
-import { ADD_COMPANY } from "./types";
+import { ADD_NEW_COMPANY } from "./types";
+import { ADDING_NEW_COMPANY_OBJ } from "./types";
+import { DELETE_DATABASE } from "./types";
 
-const databaseAray = []
 
+export const addNewCompany = () => {
+  console.log("Action Renders");
+  return {
+    type: ADD_NEW_COMPANY,
+  };
+};
 
-export const addingComp = ()=>{
-    console.log('btn db gya')
-//    let isAddCompanyBtn = true
-    return{
-        type: ADD_COMPANY,
-        payload: true
+export const addingNewCompanyObj = (data) =>{
+  if (!localStorage.getItem('companyDatabase')){
+    localStorage.setItem("companyDatabase", '[]' )
+  }
+    let companyDatabase = JSON.parse(localStorage.getItem('companyDatabase'))
+    if (!localStorage.getItem('JobId')){
+      localStorage.setItem('JobId', '0')
     }
+    data.id = JSON.parse(localStorage.getItem('JobId')) + 1
+    localStorage.setItem('JobId', JSON.stringify(data.id) )
+    console.log(data)
+    companyDatabase.push(data)
+    localStorage.setItem("companyDatabase", JSON.stringify(companyDatabase) )
+ 
+    return {
+        type: ADDING_NEW_COMPANY_OBJ,
+        payload: companyDatabase
+      };
 }
 
-export const newCompanyPush =(newCo)=>{
-    console.log(newCo);
-    databaseAray.push(newCo)
-    console.log(databaseAray)
-
+export const deleteDatabase = ()=>{
+  return{
+    type: DELETE_DATABASE
+  }
 }

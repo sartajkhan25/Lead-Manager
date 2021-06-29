@@ -4,6 +4,7 @@
     /* background-color: rgb(255, 228, 228); */
     border-radius: 5px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    border: 1px solid rgb(222, 222, 235);
 }
 .container li{
     list-style-type: none;

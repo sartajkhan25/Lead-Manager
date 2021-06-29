@@ -14,7 +14,7 @@ export const fetchleadsrequest = () => {
 export const fetchleadssuccess = (users) => {
   return {
     type: FETCH_LEADS_SUCCESS,
-    payload: users,
+    payload: users, 
   };
 };
 export const fetchleadsfailure = (error) => {
@@ -23,6 +23,7 @@ export const fetchleadsfailure = (error) => {
     payload: error,
   };
 };
+
 export const fetchleads = () => {
   console.log('data fetching: outside Function')
   return async (dispatch) => {
