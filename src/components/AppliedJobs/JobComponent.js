@@ -12,7 +12,7 @@ function JobComponent(props) {
     localStorage.setItem('companyDatabase', JSON.stringify(sliced))
 
     // Adding in Deleted Jobs
-
+// okay
  
     if (!localStorage.getItem('deletedJobs')){
       localStorage.setItem('deletedJobs', '[]')
