@@ -12,6 +12,7 @@ function AppliedJobs(props) {
   } else {
     dataBase = props.companyDatabase;
   }
+  // hello there
 
   return (
     <div className={styles["container"]}>
