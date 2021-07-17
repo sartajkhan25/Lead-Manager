@@ -3,7 +3,7 @@ import AddCompanyForm from "./AddCompanyForm";
 import { addNewCompany } from "../../redux/jobApplied/actions";
 import { connect } from "react-redux";
 import { deleteDatabase } from "../../redux/jobApplied/actions";
-
+// hi
 function SnippitSidebar(props) {
   console.log(props);
   let comment;
